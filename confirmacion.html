@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turno reservado | TurnoYa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="barra">
+  <a class="logo" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg> TurnoYa</a>
+  <a class="enlace-barra" href="mis-reservas.html">Mis reservas</a>
+</header>
+<main id="contenido" class="contenedor pila">
+<div class="exito pila" role="status">
+  <span class="exito__icono"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span>
+  <h1>¡Tu turno quedó reservado!</h1>
+  <p class="apoyo">Jueves 12 de noviembre, 9:00 a. m. con Camilo Ríos.</p>
+</div>
+<div class="pila">
+  <p class="pequeno" style="text-align:center">Tu código de reserva</p>
+  <span class="codigo">A7K2P9</span>
+  <p class="pequeno" style="text-align:center">Guárdalo: lo necesitas para consultar o cancelar tu turno.</p>
+  <button class="btn btn--primario btn--bloque" type="button" id="copiar">Copiar código</button>
+  <p class="alerta alerta--exito" id="copiado" role="status" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> <span>Código copiado.</span></p>
+  <a class="btn btn--secundario btn--bloque" href="index.html">Volver al inicio</a>
+</div>
+<script>
+  document.getElementById("copiar").addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText("A7K2P9"); document.getElementById("copiado").hidden = false; } catch (e) { /* el código sigue visible para copiarlo a mano */ }
+  });
+</script>
+</main>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestión de servicios | TurnoYa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div class="admin">
+  <header class="admin__menu">
+    <div class="admin__marca">
+      <a class="logo" href="panel.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg> TurnoYa</a>
+      <a class="admin__salir" href="login.html">Salir</a>
+    </div>
+    <nav class="admin__nav" aria-label="Menú del panel">
+      <ul>
+        <li><a href="panel.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg> Panel principal</a></li>
+        <li><a href="gestion.html" aria-current="page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg> Gestión</a></li>
+        <li><a href="reportes.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg> Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contenido" class="admin__contenido pila-g">
+    <div class="encabezado">
+      <h1>Gestión de servicios</h1>
+      <a class="btn btn--primario" href="#nuevo">Agregar servicio</a>
+    </div>
+    <div class="alerta alerta--exito" role="status"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> <span>Servicio guardado.</span></div>
+    <nav class="pestanas" aria-label="Secciones de gestión">
+      <a href="gestion.html" aria-current="page">Servicios</a>
+      <a href="gestion-barberos.html">Barberos</a>
+    </nav>
+    <div class="tabla-caja" tabindex="0" role="region" aria-label="Servicios de la barbería">
+      <table>
+        <caption>Servicios publicados</caption>
+        <thead><tr><th scope="col">Servicio</th><th scope="col" class="num">Precio</th><th scope="col" class="num solo-escritorio">Duración</th><th scope="col">Acciones</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Corte clásico<span class="solo-movil">30 min</span></th><td class="num">$18.000</td><td class="num solo-escritorio">30 min</td><td><a class="btn btn--secundario btn--chico" href="#nuevo">Editar<span class="sr"> Corte clásico</span></a></td></tr>
+          <tr><th scope="row">Barba<span class="solo-movil">20 min</span></th><td class="num">$12.000</td><td class="num solo-escritorio">20 min</td><td><a class="btn btn--secundario btn--chico" href="#nuevo">Editar<span class="sr"> Barba</span></a></td></tr>
+          <tr><th scope="row">Corte + barba<span class="solo-movil">45 min</span></th><td class="num">$28.000</td><td class="num solo-escritorio">45 min</td><td><a class="btn btn--secundario btn--chico" href="#nuevo">Editar<span class="sr"> Corte + barba</span></a></td></tr>
+          <tr><th scope="row">Cejas<span class="solo-movil">10 min</span></th><td class="num">$6.000</td><td class="num solo-escritorio">10 min</td><td><a class="btn btn--secundario btn--chico" href="#nuevo">Editar<span class="sr"> Cejas</span></a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <section id="nuevo" class="tarjeta pila" aria-labelledby="titulo-form">
+      <h2 id="titulo-form">Agregar o editar un servicio</h2>
+      <form action="gestion-guardado.html" method="get" class="pila">
+        <div class="campo"><label for="s-nombre">Nombre del servicio</label><input class="entrada" id="s-nombre" type="text" required aria-describedby="s-nombre-e"><p class="campo__error" id="s-nombre-e">Escribe el nombre del servicio.</p></div>
+        <div class="rejilla rejilla--2">
+          <div class="campo"><label for="s-precio">Precio en pesos</label><input class="entrada" id="s-precio" type="number" min="1000" step="500" required aria-describedby="s-precio-e"><p class="campo__error" id="s-precio-e">Escribe un precio válido.</p></div>
+          <div class="campo"><label for="s-dur">Duración</label><select class="selector" id="s-dur"><option>10 min</option><option>20 min</option><option selected>30 min</option><option>45 min</option><option>60 min</option></select></div>
+        </div>
+        <button class="btn btn--primario" type="submit">Guardar servicio</button>
+      </form>
+    </section>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingresar | TurnoYa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<main class="acceso">
+  <div class="acceso__caja pila-g">
+    <a class="logo" href="../index.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg> TurnoYa</a>
+    <div class="pila">
+      <h1>Ingresa al panel de tu barbería</h1>
+      <p class="apoyo">Este acceso es para dueños y barberos. Tus clientes reservan sin cuenta.</p>
+    </div>
+    <form action="panel.html" method="get" class="tarjeta pila">
+      <div class="campo">
+        <label for="correo">Correo</label>
+        <input class="entrada" id="correo" type="email" autocomplete="username" required aria-describedby="correo-error">
+        <p class="campo__error" id="correo-error">Escribe un correo válido.</p>
+      </div>
+      <div class="campo">
+        <label for="clave">Contraseña</label>
+        <input class="entrada" id="clave" type="password" autocomplete="current-password" required aria-describedby="clave-error">
+        <p class="campo__error" id="clave-error">Escribe tu contraseña.</p>
+      </div>
+      <button class="btn btn--primario btn--bloque" type="submit">Ingresar</button>
+    </form>
+    <p class="apoyo" style="text-align:center">¿Tu barbería aún no está? <a class="enlace-tactil" href="registro.html">Regístrala</a></p>
+  </div>
+</main>
+</body>
+</html>

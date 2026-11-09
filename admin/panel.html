@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel principal | TurnoYa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div class="admin">
+  <header class="admin__menu">
+    <div class="admin__marca">
+      <a class="logo" href="panel.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg> TurnoYa</a>
+      <a class="admin__salir" href="login.html">Salir</a>
+    </div>
+    <nav class="admin__nav" aria-label="Menú del panel">
+      <ul>
+        <li><a href="panel.html" aria-current="page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg> Panel principal</a></li>
+        <li><a href="gestion.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg> Gestión</a></li>
+        <li><a href="reportes.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg> Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contenido" class="admin__contenido pila-g">
+    <div class="encabezado">
+      <div><h1>Agenda de hoy</h1><p class="apoyo">Jueves 12 de noviembre de 2026</p></div>
+    </div>
+    <ul class="kpis" aria-label="Resumen del día">
+      <li class="kpi"><span class="kpi__valor">6</span><span class="kpi__nombre">Turnos de hoy</span></li>
+      <li class="kpi"><span class="kpi__valor">2</span><span class="kpi__nombre">Atendidos</span></li>
+      <li class="kpi"><span class="kpi__valor">3</span><span class="kpi__nombre">Pendientes</span></li>
+      <li class="kpi"><span class="kpi__valor">$92.000</span><span class="kpi__nombre">Ingreso estimado</span></li>
+    </ul>
+    <div class="tabla-caja" tabindex="0" role="region" aria-label="Turnos del día">
+      <table>
+        <caption>Turnos del día</caption>
+        <thead><tr><th scope="col">Hora</th><th scope="col">Cliente</th><th scope="col" class="solo-escritorio">Servicio</th><th scope="col" class="solo-escritorio">Barbero</th><th scope="col">Estado</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">8:00 a. m.</th><td>Juan P.<span class="solo-movil">Corte clásico con Camilo Ríos</span></td><td class="solo-escritorio">Corte clásico</td><td class="solo-escritorio">Camilo Ríos</td><td><span class="estado estado--atendido">Atendido</span></td></tr>
+          <tr><th scope="row">9:00 a. m.</th><td>Carlos M.<span class="solo-movil">Barba con Jhon Mena</span></td><td class="solo-escritorio">Barba</td><td class="solo-escritorio">Jhon Mena</td><td><span class="estado estado--atendido">Atendido</span></td></tr>
+          <tr><th scope="row">10:30 a. m.</th><td>Mateo R.<span class="solo-movil">Corte + barba con Camilo Ríos</span></td><td class="solo-escritorio">Corte + barba</td><td class="solo-escritorio">Camilo Ríos</td><td><span class="estado estado--pendiente">Pendiente</span></td></tr>
+          <tr><th scope="row">11:30 a. m.</th><td>Diego L.<span class="solo-movil">Corte clásico con Sebastián Ortiz</span></td><td class="solo-escritorio">Corte clásico</td><td class="solo-escritorio">Sebastián Ortiz</td><td><span class="estado estado--cancelado">Cancelado</span></td></tr>
+          <tr><th scope="row">2:30 p. m.</th><td>Laura G.<span class="solo-movil">Cejas con Jhon Mena</span></td><td class="solo-escritorio">Cejas</td><td class="solo-escritorio">Jhon Mena</td><td><span class="estado estado--pendiente">Pendiente</span></td></tr>
+          <tr><th scope="row">4:00 p. m.</th><td>Andrés T.<span class="solo-movil">Corte + barba con Sebastián Ortiz</span></td><td class="solo-escritorio">Corte + barba</td><td class="solo-escritorio">Sebastián Ortiz</td><td><span class="estado estado--pendiente">Pendiente</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="pequeno">Datos de ejemplo. El ingreso estimado no incluye los turnos cancelados.</p>
+  </main>
+</div>
+</body>
+</html>

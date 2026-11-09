@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de estilos | TurnoYa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="barra"><a class="logo" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg> TurnoYa</a><span class="pequeno">Guía de estilos</span></header>
+<main class="contenedor pila-g">
+  <h1>Guía de estilos de TurnoYa</h1>
+  <section class="pila"><h2>Colores</h2><div class="guia-colores">
+    <div class="color"><div class="color__muestra" style="background:#1E3A8A"></div><div class="color__dato"><b>Azul principal</b>#1E3A8A<br><span class="pequeno">Botones y enlaces</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#F59E0B"></div><div class="color__dato"><b>Ámbar acento</b>#F59E0B<br><span class="pequeno">Día elegido, foco</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#16A34A"></div><div class="color__dato"><b>Verde</b>#16A34A<br><span class="pequeno">Libre y éxito</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#9CA3AF"></div><div class="color__dato"><b>Gris</b>#9CA3AF<br><span class="pequeno">Ocupado</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#DC2626"></div><div class="color__dato"><b>Rojo</b>#DC2626<br><span class="pequeno">Error y cancelar</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#B45309"></div><div class="color__dato"><b>Ámbar texto</b>#B45309<br><span class="pequeno">Precios (5,02:1)</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#166534"></div><div class="color__dato"><b>Verde texto</b>#166534<br><span class="pequeno">Sobre verde suave (6,49:1)</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#991B1B"></div><div class="color__dato"><b>Rojo texto</b>#991B1B<br><span class="pequeno">Errores (6,8:1)</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#EFF3FE"></div><div class="color__dato"><b>Azul suave</b>#EFF3FE<br><span class="pequeno">Fondo de selección</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#FEF3C7"></div><div class="color__dato"><b>Ámbar suave</b>#FEF3C7<br><span class="pequeno">Recuadro del código</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#DCFCE7"></div><div class="color__dato"><b>Verde suave</b>#DCFCE7<br><span class="pequeno">Fondo hora libre</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#FEE2E2"></div><div class="color__dato"><b>Rojo suave</b>#FEE2E2<br><span class="pequeno">Fondo de error</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#111827"></div><div class="color__dato"><b>Tinta</b>#111827<br><span class="pequeno">Texto principal</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#374151"></div><div class="color__dato"><b>Tinta 2</b>#374151<br><span class="pequeno">Texto de apoyo</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#6B7280"></div><div class="color__dato"><b>Tinta 3</b>#6B7280<br><span class="pequeno">Texto secundario (4,83:1)</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#D1D5DB"></div><div class="color__dato"><b>Borde</b>#D1D5DB<br><span class="pequeno">Bordes</span></div></div>
+    <div class="color"><div class="color__muestra" style="background:#F9FAFB"></div><div class="color__dato"><b>Fondo</b>#F9FAFB<br><span class="pequeno">Fondo de página</span></div></div>
+  </div></section>
+  <section class="pila"><h2>Tipografía</h2>
+    <div class="tarjeta pila">
+      <p style="font-size:32px;font-weight:700;line-height:1.2">Título 32 / Inter Bold</p>
+      <h1>Título de pantalla 24 / Inter Bold</h1>
+      <h2>Subtítulo 20 / Inter Bold</h2>
+      <h3>Encabezado de tarjeta 18 / Inter Bold</h3>
+      <p>Cuerpo 16 / Inter Regular</p>
+      <p class="pequeno">Apoyo 14 / Inter Regular</p>
+      <p style="font:700 32px var(--fuente-mono);color:var(--azul)">A7K2P9 Roboto Mono Bold</p>
+    </div>
+  </section>
+  <section class="pila"><h2>Botones</h2>
+    <div class="guia-fila">
+      <span class="btn btn--primario">Primario</span>
+      <span class="btn btn--primario" style="background:var(--azul-oscuro)">Hover</span>
+      <span class="btn btn--secundario">Secundario</span>
+      <span class="btn btn--peligro">Peligro</span>
+      <button class="btn" disabled>Deshabilitado</button>
+      <span class="btn btn--secundario btn--chico">Chico</span>
+    </div>
+  </section>
+  <section class="pila"><h2>Horarios</h2>
+    <div class="horas" style="max-width:420px">
+      <label class="hora"><input type="radio" name="g"><span>09:00</span></label>
+      <label class="hora"><input type="radio" name="g" checked><span>09:30</span></label>
+      <label class="hora"><input type="radio" name="g" disabled><span>10:00</span></label>
+    </div>
+    <ul class="leyenda"><li><span class="muestra muestra--libre"></span> Libre</li><li><span class="muestra muestra--elegido"></span> Elegido</li><li><span class="muestra muestra--ocupado"></span> Ocupado</li></ul>
+  </section>
+  <section class="pila"><h2>Campos de formulario</h2>
+    <div class="rejilla rejilla--2">
+      <div class="campo"><label for="g1">Normal</label><input class="entrada" id="g1" type="text" placeholder="Texto"></div>
+      <div class="campo"><label for="g2">Con error</label><input class="entrada entrada--error" id="g2" type="text" aria-describedby="g2e"><p class="campo__error campo__error--visible" id="g2e">Escribe un celular de 10 dígitos.</p></div>
+    </div>
+  </section>
+  <section class="pila"><h2>Tarjetas</h2>
+    <div class="rejilla rejilla--2">
+      <label class="opcion"><input type="radio" name="g3"><span class="opcion__caja"><span class="opcion__texto"><span class="opcion__nombre">Corte clásico</span><span class="opcion__fila"><span class="precio">$18.000</span><span class="duracion"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 30 min</span></span></span><span class="marca"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span></span></label>
+      <label class="opcion"><input type="radio" name="g3" checked><span class="opcion__caja"><span class="opcion__texto"><span class="opcion__nombre">Tarjeta seleccionada</span><span class="opcion__fila"><span class="precio">$28.000</span><span class="duracion"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 45 min</span></span></span><span class="marca"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span></span></label>
+    </div>
+  </section>
+  <section class="pila"><h2>Alertas y estados</h2>
+    <div class="alerta alerta--info"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg> <span>Te mostramos más horarios.</span></div>
+    <div class="alerta alerta--error"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg> <span>Reserva no encontrada. Revisa el código e inténtalo de nuevo.</span></div>
+    <div class="alerta alerta--exito"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> <span>Servicio guardado.</span></div>
+    <div class="guia-fila"><span class="estado estado--atendido">Atendido</span><span class="estado estado--pendiente">Pendiente</span><span class="estado estado--cancelado">Cancelado</span></div>
+    <span class="codigo" style="max-width:320px">A7K2P9</span>
+  </section>
+  <section class="pila"><h2>Espaciado y forma</h2>
+    <p class="apoyo">Escala de espaciado: 4, 8, 12, 16, 24 y 32 px. Radio: 8 px en botones y campos, 12 px en tarjetas. Área táctil mínima: 44 × 44 px. Foco visible: contorno ámbar de 3 px.</p>
+  </section>
+</main>
+</body>
+</html>

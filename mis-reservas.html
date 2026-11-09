@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis reservas | TurnoYa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="barra">
+  <a class="logo" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg> TurnoYa</a>
+  <a class="enlace-barra" href="mis-reservas.html">Mis reservas</a>
+</header>
+<main id="contenido" class="contenedor pila">
+<a class="volver" href="index.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg> Volver</a>
+<h1>Mis reservas</h1>
+<p class="apoyo">Escribe el código que recibiste al reservar.</p>
+<form action="detalle.html" method="get" class="pila">
+  <div class="campo">
+    <label for="codigo">Código de reserva</label>
+    <input class="entrada entrada--codigo" id="codigo" type="text" maxlength="6" pattern="[A-Za-z0-9]{6}" required placeholder="A7K2P9" autocomplete="off" aria-describedby="codigo-error">
+    <p class="campo__error" id="codigo-error">El código tiene 6 letras y números.</p>
+  </div>
+  <button class="btn btn--primario btn--bloque" type="submit">Buscar</button>
+</form>
+</main>
+</body>
+</html>

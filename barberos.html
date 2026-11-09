@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elige a tu barbero | TurnoYa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="barra">
+  <a class="logo" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg> TurnoYa</a>
+  <a class="enlace-barra" href="mis-reservas.html">Mis reservas</a>
+</header>
+<main id="contenido" class="contenedor pila">
+<a class="volver" href="servicios.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg> Volver</a>
+<div class="pasos">
+  <p class="pasos__texto">Paso 2 de 5</p>
+  <div class="pasos__barra" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="2" aria-label="Avance de la reserva"><span class="pasos__avance" style="width:40%"></span></div>
+</div>
+<form action="agenda.html" method="get">
+  <fieldset class="pila">
+    <legend><h1>¿Quién te atiende?</h1></legend>
+    <div class="rejilla rejilla--2">
+      <label class="opcion">
+        <input class="requiere-seleccion" type="radio" name="barbero" value="cualquiera" required>
+        <span class="opcion__caja">
+          <span class="avatar" aria-hidden="true">Todos</span>
+          <span class="opcion__texto"><span class="opcion__nombre">Cualquier barbero disponible</span><span class="opcion__detalle">Te mostramos más horarios</span></span>
+          <span class="marca"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span>
+        </span>
+      </label>
+      <label class="opcion">
+        <input class="requiere-seleccion" type="radio" name="barbero" value="camilo" required>
+        <span class="opcion__caja">
+          <span class="avatar" aria-hidden="true">CR</span>
+          <span class="opcion__texto"><span class="opcion__nombre">Camilo Ríos</span><span class="opcion__detalle">Degradados y cortes clásicos</span></span>
+          <span class="marca"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span>
+        </span>
+      </label>
+      <label class="opcion">
+        <input class="requiere-seleccion" type="radio" name="barbero" value="jhon" required>
+        <span class="opcion__caja">
+          <span class="avatar" aria-hidden="true">JM</span>
+          <span class="opcion__texto"><span class="opcion__nombre">Jhon Mena</span><span class="opcion__detalle">Barba y perfilado</span></span>
+          <span class="marca"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span>
+        </span>
+      </label>
+      <label class="opcion">
+        <input class="requiere-seleccion" type="radio" name="barbero" value="sebas" required>
+        <span class="opcion__caja">
+          <span class="avatar" aria-hidden="true">SO</span>
+          <span class="opcion__texto"><span class="opcion__nombre">Sebastián Ortiz</span><span class="opcion__detalle">Cortes modernos</span></span>
+          <span class="marca"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span>
+        </span>
+      </label>
+    </div>
+  </fieldset>
+  <div class="accion"><button class="btn btn--primario btn--bloque" type="submit">Continuar</button></div>
+</form>
+</main>
+</body>
+</html>

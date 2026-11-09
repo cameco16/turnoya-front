@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tus datos | TurnoYa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="barra">
+  <a class="logo" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg> TurnoYa</a>
+  <a class="enlace-barra" href="mis-reservas.html">Mis reservas</a>
+</header>
+<main id="contenido" class="contenedor pila">
+<a class="volver" href="agenda.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg> Volver</a>
+<div class="pasos">
+  <p class="pasos__texto">Paso 4 de 5</p>
+  <div class="pasos__barra" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="4" aria-label="Avance de la reserva"><span class="pasos__avance" style="width:80%"></span></div>
+</div>
+<form action="resumen.html" method="get" class="pila">
+  <h1>Tus datos</h1>
+  <p class="apoyo">Solo los necesitamos para apartar tu turno. No tienes que crear cuenta.</p>
+  <div class="campo">
+    <label for="nombre">Nombre</label>
+    <input class="entrada" id="nombre" type="text" autocomplete="name" minlength="3" required aria-describedby="nombre-error">
+    <p class="campo__error" id="nombre-error">Escribe tu nombre, con al menos 3 letras.</p>
+  </div>
+  <div class="campo">
+    <label for="celular">Celular</label>
+    <input class="entrada" id="celular" type="tel" inputmode="numeric" autocomplete="tel-national" pattern="[0-9]{10}" maxlength="10" required aria-describedby="celular-ayuda celular-error">
+    <p class="campo__ayuda" id="celular-ayuda">10 dígitos, sin espacios. Ejemplo: 3001234567</p>
+    <p class="campo__error" id="celular-error">Escribe un celular de 10 dígitos.</p>
+  </div>
+  <div class="accion"><button class="btn btn--primario btn--bloque" type="submit">Continuar</button></div>
+</form>
+</main>
+</body>
+</html>
